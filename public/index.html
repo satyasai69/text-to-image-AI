@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/spinner.css" />
+    <link rel="stylesheet" href="css/style2.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon_io/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="./img/favicon_io/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="./img/favicon_io/favicon-16x16.png">
+<link rel="manifest" href="./img/favicon_io/site.webmanifest">
+
+
+    <script src="js/main.js" defer></script>
+    <title>Genrator image by AI</title>
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <div class="logo">
+
+          <img src="./img/favicon_io/android-chrome-192x192.png" alt="elon musk" width="100" height="50">
+          
+          <h2>Image Genrator AI</h2>
+          
+        </div>
+        <div class="nav-links">
+          <ul>
+            <li>
+              <a href="https://twitter.com/chavasatyasai" target="_blank"
+                > @Twitter</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="showcase">
+        <form id="image-form">
+          <h1>Describe An Image </h1><p>
+             made by <a href="http://chavasatyasai.xyz/">@satyasai</a>
+          </p>
+          
+          <div class="form-control">
+            <input type="text" id="prompt" placeholder="Enter Text" />
+          </div>
+          <!-- size -->
+          <div class="form-control">
+            <select name="size" id="size">
+              <option value="small">Small</option>
+              <option value="medium" selected>Medium</option>
+              <option value="large">Large</option>
+            </select>
+          </div>
+          <button type="submit" class="btn">Generate</button>
+          <button class="download-btn" onclick="downloadImage()">Download image</button>
+        </form>
+        
+        
+      </section>
+
+      <section class="image">
+        <div class="image-container">
+          <h2 class="msg"></h2>
+          <img src="" alt="" id="image" />
+          
+        </div>
+      </section>
+    </main>
+
+    <div class="spinner"></div>
+  </body>
+</html>
