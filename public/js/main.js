@@ -8,7 +8,7 @@ function onSubmit(e) {
   const size = document.querySelector('#size').value;
 
   if (prompt === '') {
-    alert('Please add some text');
+    alert('Please add some fu*ki*g text 🤬');
     return;
   }
 
@@ -32,7 +32,8 @@ async function generateImageRequest(prompt, size) {
 
     if (!response.ok) {
       removeSpinner();
-      throw new Error('That image could not be generated');
+      throw new Error('That fu*ki*g image could not be generated brooo');
+     
     }
 
     const data = await response.json();
