@@ -43,20 +43,7 @@ async function generateImageRequest(prompt, size) {
     document.querySelector('#image').src = imageUrl;
 
 
-    //
 
-    function downloadImage() {
-      const DimageUrl = imageUrl;
-      const imageName = 'MF.jpg';
-
-      const link = document.createElement('a');
-      link.href = imageUrl;
-      link.download = imageName;
-      document.body.appendChild(link);
-      link.click();
-      document.body.removeChild(link);
-  }
-    //
 
     removeSpinner();
   } catch (error) {
