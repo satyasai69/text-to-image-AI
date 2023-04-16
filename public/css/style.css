@@ -100,10 +100,10 @@ form button:hover {
 
 /* Image */
 
-.image {
+/*.image {
   width: 100%;
   margin-top: 2rem;
-}
+} */
 
 img {
   display: block;
@@ -115,6 +115,19 @@ img {
   text-align: center;
   margin-top: 1rem;
 }
+
+.image {
+  max-width: 100%;
+  height: auto;
+}
+ 
+@media (max-width: 765px) {
+  .image {
+    width: 100%;
+    height: auto;
+  }
+}
+
 
 
 /*download button */
