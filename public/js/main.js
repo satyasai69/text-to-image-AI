@@ -32,7 +32,7 @@ async function generateImageRequest(prompt, size) {
 
     if (!response.ok) {
       removeSpinner();
-      throw new Error('That fu*ki*g image could not be generated brooo');
+      throw new Error('Due to high demand the server is burning🔥. please try again later');
      
     }
 
